@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>
+            Instagram landing page
+        </title>
+        <link href="stylesheet.css" type="text/css" rel="stylesheet"> </link>
+    </head>
+    <body>
+        <div class="profileContainer">
+            <div class="profilePic">
+                <img src="https://pbs.twimg.com/profile_images/988681030340087808/xOEDOjky.jpg" />
+            </div>
+            <div class="profileInfo">
+                <div class="username">
+                    <h1> unmihiristic </h1>
+                    <button id="follow">Follow</button>
+                </div>
+                <ul class="posts-follow-following">
+                    <li><b>68</b> posts</li>
+                    <li><b>730</b> followers</li>
+                    <li><b>718</b> following</li>
+                </ul>
+                <div class="userBio">
+                    <p>Mihir Shah: DA-IICTian Music and Mathematics ❤
+                        Piecewise exploration of continuous function!
+                        Likes the people who know the meaning of "Iff"
+                        "Pure as snow"</p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            const imgToResize = document.querySelector('img');
+            const profileInfo = document.querySelector('.profileInfo');
+            const {width, height} = profileInfo.getBoundingClientRect();
+            console.log(width, height);
+        </script>
+    </body>
+</html>
